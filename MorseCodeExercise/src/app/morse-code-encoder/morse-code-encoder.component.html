@@ -1,0 +1,5 @@
+<div class="container">
+  <input type="text" placeholder="Enter your text" [(ngModel)]="plainText" class="input-text">
+  <button (click)="encodeText()" [disabled]="isEncodeButtonDisabled()" class="encode-button">Encode</button>
+  <input type="text" readonly [(ngModel)]="morseCode" class="output-text">
+</div>

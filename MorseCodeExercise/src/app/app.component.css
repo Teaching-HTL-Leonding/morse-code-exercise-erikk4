@@ -1,0 +1,53 @@
+/* Centering the whole page */
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Centering the container that holds the content */
+.container {
+  text-align: center;
+}
+
+/* Styling for the heading */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: black; /* DodgerBlue for heading */
+  text-align: center;
+}
+
+/* Styling for the navigation links */
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers links within the container */
+  gap: 10px;
+}
+
+/* Limit the width of the links */
+.nav-links a {
+  text-decoration: none;
+  padding: 10px 20px;
+  color: white;
+  background-color: #007bff; /* Blue background */
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 200px; /* Set a fixed width for the links */
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Optional: If you want to style the router-outlet area */
+router-outlet {
+  margin-top: 20px;
+  width: 100%;
+}
