@@ -24,6 +24,7 @@ export class MorseCodeDecoderComponent {
     }
     catch (error) {
       this.errorMessage.set((error as Error).message);
+      this.plainText.set('');
     }
 
   }

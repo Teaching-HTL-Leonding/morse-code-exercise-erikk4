@@ -19,8 +19,6 @@ export class MorseCodeEncoderComponent {
     this.morseCode.set(this.morseService.encode(this.plainText()));
   }
 
-  // This button must be disabled if the text to encode is empty or contains any other characters than A-Z and blanks separating words.
-  // make it with simpler regex
   public isEncodeButtonDisabled(): boolean {
     return this.plainText().trim().length === 0 || !/^[A-Z ]+$/.test(this.plainText());
   }
