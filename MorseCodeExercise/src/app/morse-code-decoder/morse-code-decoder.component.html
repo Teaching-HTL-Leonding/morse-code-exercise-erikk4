@@ -1,0 +1,10 @@
+<div class="container">
+  <input type="text" name="" placeholder="Enter your morse code" [(ngModel)]="morseCode" class="input-text">
+  <button (click)="decodeText()" [disabled]="isDecodeButtonDisabled()" class="decode-button">Decode</button>
+
+  <div *ngIf="errorMessage" class="error-message">
+    {{ errorMessage() }}
+  </div>
+
+  <input type="text" name="" readonly [(ngModel)]="plainText" class="output-text">
+</div>
